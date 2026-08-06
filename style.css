@@ -819,6 +819,163 @@ img {
 }
 
 /* ========================================
+   STORY SECTION
+   ======================================== */
+#story {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.85) 100%),
+        url('assets/lt/lt2.jpg') center 50%/cover no-repeat fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* ========================================
+   TIMELINE ALTERNATING
+   ======================================== */
+.timeline-alternating {
+    position: relative;
+    padding: 10px 0;
+}
+.timeline-alternating::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, transparent, var(--primary), transparent);
+}
+
+.timeline-item-alt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 46px;
+}
+.timeline-item-alt.right {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.timeline-item-alt:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-icon-alt {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border-radius: 50%;
+    background: var(--bg-card-solid);
+    border: 2px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--primary);
+    z-index: 2;
+    position: absolute;
+    left: -2px;
+    top: 0;
+    box-shadow: 0 4px 15px rgba(184, 134, 11, 0.08);
+}
+.timeline-item-alt.right .timeline-icon-alt {
+    left: -2px;
+}
+
+.timeline-content-alt {
+    flex: 1;
+    background: var(--bg-card-solid);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(184, 134, 11, 0.04);
+    border-radius: 10px;
+    padding: 16px 18px;
+    position: relative;
+    width: 100%;
+    box-shadow: var(--shadow-primary);
+}
+.timeline-item-alt.right .timeline-content-alt {
+    text-align: left;
+}
+.timeline-content-alt h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    color: var(--primary);
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+.timeline-content-alt h4::before {
+    content: '✦ ';
+    color: var(--primary);
+    font-size: 11px;
+}
+.timeline-content-alt p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+.timeline-content-alt p strong {
+    color: var(--primary-dark);
+    font-weight: 500;
+}
+.timeline-year {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 3px 14px;
+    background: rgba(184, 134, 11, 0.04);
+    border: 1px solid rgba(184, 134, 11, 0.08);
+    border-radius: 20px;
+    font-size: 10px;
+    color: var(--primary);
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+/* ========================================
+   RESPONSIVE - TABLET (768px+)
+   ======================================== */
+@media (min-width: 768px) {
+    .timeline-alternating::before {
+        left: 50%;
+    }
+    .timeline-item-alt {
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 40px;
+    }
+    .timeline-item-alt.right {
+        flex-direction: row-reverse;
+    }
+    .timeline-item-alt.right .timeline-content-alt {
+        text-align: right;
+    }
+    .timeline-icon-alt {
+        position: relative;
+        left: auto;
+        top: auto;
+        margin: 0 16px;
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        font-size: 17px;
+    }
+    .timeline-item-alt.right .timeline-icon-alt {
+        left: auto;
+    }
+}
+
+/* ========================================
    ACARA CARDS
    ======================================== */
 .acara-glass-container {
