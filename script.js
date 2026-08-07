@@ -230,7 +230,7 @@ document.querySelectorAll('.scroll-down-btn-small').forEach(btn => {
 // ============================================================
 const galleryImages = [
     'assets/galeri/1.png',
-    'assets/galeri/2.png',
+    
     'assets/galeri/3.png',
     'assets/galeri/4.png',
     'assets/galeri/5.png',
@@ -250,7 +250,7 @@ const galleryLabels = [
     'Janji',
     'Doa',
     'Harapan',
-    'Kebahagiaan',   // ✅ TAMBAHKAN
+    
     
 ];
 
