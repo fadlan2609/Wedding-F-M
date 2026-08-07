@@ -230,13 +230,17 @@ document.querySelectorAll('.scroll-down-btn-small').forEach(btn => {
 // ============================================================
 const galleryImages = [
     'assets/galeri/1.jpeg',
-    'assets/galeri/2.jpg',
+    'assets/galeri/2.jpeg',
     'assets/galeri/3.jpeg',
     'assets/galeri/4.jpeg',
     'assets/galeri/5.jpeg',
     'assets/galeri/6.jpeg',
     'assets/galeri/7.jpeg',
     'assets/galeri/8.jpeg',
+    'assets/galeri/7.jpeg',
+    'assets/galeri/8.jpeg',
+    'assets/galeri/9.jpeg',
+    'assets/galeri/10.png',
 ];
 
 const galleryLabels = [
@@ -247,7 +251,9 @@ const galleryLabels = [
     'Kenangan',
     'Janji',
     'Doa',
-    'Harapan'
+    'Harapan',
+    'Kebahagiaan',   // ✅ TAMBAHKAN
+    'Cinta Abadi',
 ];
 
 const galleryGrid = document.getElementById('gallery-grid');
@@ -693,7 +699,7 @@ window.addEventListener('offline', () => {
     rsvpMessage.style.display = 'block';
 });
 
-console.log('✅ Undangan Faradiva & Mardan siap!');
+console.log('✅ Undangan Faradiva & Adan siap!');
 console.log('📌 Apps Script URL:', APPS_SCRIPT_URL);
 
 // ============================================================

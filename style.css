@@ -729,6 +729,59 @@ img {
     box-shadow: var(--shadow-primary);
 }
 
+/* ========================================
+   SOCIAL IG
+   ======================================== */
+.social-ig {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(184, 134, 11, 0.06);
+}
+
+.ig-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 20px;
+    background: rgba(184, 134, 11, 0.04);
+    border: 1px solid rgba(184, 134, 11, 0.06);
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.3px;
+}
+
+.ig-link i {
+    font-size: 16px;
+    color: #E4405F;
+    transition: transform 0.3s ease;
+}
+
+.ig-link:hover {
+    background: rgba(184, 134, 11, 0.08);
+    border-color: rgba(184, 134, 11, 0.15);
+    transform: translateY(-2px);
+}
+
+.ig-link:hover i {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .ig-link {
+        font-size: 10px;
+        padding: 4px 12px;
+    }
+    .ig-link i {
+        font-size: 14px;
+    }
+}
+
 .portrait-frame-static {
     width: 130px;
     height: 130px;
@@ -1078,6 +1131,9 @@ img {
     margin-left: 4px;
 }
 
+/* ========================================
+   GALERI - 10 FOTO
+   ======================================== */
 .gallery-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1085,6 +1141,7 @@ img {
     padding: 0;
 }
 
+/* Layout untuk 10 foto - RAPI & ESTETIS */
 .gallery-grid .gallery-item:nth-child(1) {
     grid-column: span 2;
     grid-row: span 1;
@@ -1124,6 +1181,17 @@ img {
     grid-column: span 1;
     grid-row: span 1;
     aspect-ratio: 4/3;
+}
+/* ✅ TAMBAHKAN UNTUK FOTO 9 & 10 */
+.gallery-grid .gallery-item:nth-child(9) {
+    grid-column: span 1;
+    grid-row: span 1;
+    aspect-ratio: 1;
+}
+.gallery-grid .gallery-item:nth-child(10) {
+    grid-column: span 1;
+    grid-row: span 1;
+    aspect-ratio: 1;
 }
 
 .gallery-grid .gallery-item {
