@@ -238,7 +238,7 @@ const galleryImages = [
     'assets/galeri/7.png',
     'assets/galeri/8.png',
     'assets/galeri/9.png',
-    'assets/galeri/10.png',
+    
 ];
 
 const galleryLabels = [
@@ -251,7 +251,7 @@ const galleryLabels = [
     'Doa',
     'Harapan',
     'Kebahagiaan',   // ✅ TAMBAHKAN
-    'Cinta Abadi',
+    
 ];
 
 const galleryGrid = document.getElementById('gallery-grid');
