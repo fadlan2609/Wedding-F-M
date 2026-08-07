@@ -237,8 +237,6 @@ const galleryImages = [
     'assets/galeri/6.jpeg',
     'assets/galeri/7.jpeg',
     'assets/galeri/8.jpeg',
-    'assets/galeri/7.jpeg',
-    'assets/galeri/8.jpeg',
     'assets/galeri/9.jpeg',
     'assets/galeri/10.png',
 ];
