@@ -229,15 +229,15 @@ document.querySelectorAll('.scroll-down-btn-small').forEach(btn => {
 // 10. GALLERY
 // ============================================================
 const galleryImages = [
-    'assets/galeri/1.jpeg',
-    'assets/galeri/2.jpeg',
-    'assets/galeri/3.jpeg',
-    'assets/galeri/4.jpeg',
-    'assets/galeri/5.jpeg',
-    'assets/galeri/6.jpeg',
-    'assets/galeri/7.jpeg',
-    'assets/galeri/8.jpeg',
-    'assets/galeri/9.jpeg',
+    'assets/galeri/1.png',
+    'assets/galeri/2.png',
+    'assets/galeri/3.png',
+    'assets/galeri/4.png',
+    'assets/galeri/5.png',
+    'assets/galeri/6.png',
+    'assets/galeri/7.png',
+    'assets/galeri/8.png',
+    'assets/galeri/9.png',
     'assets/galeri/10.png',
 ];
 
